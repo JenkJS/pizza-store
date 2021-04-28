@@ -24,8 +24,8 @@
     "web-vitals": "^1.1.1"
   },
   "scripts": {
-    "start": "concurrently \" node server\" \" react-scripts start\"",
-    "build": "concurrently \" node server\" \" react-scripts build\"",
+    "start": "concurrently \"react-scripts start\"  \"json-server -p 3001 -w public/db.json\"",
+    "build": "concurrently \"react-scripts start\"  \"json-server -p 3001 -w public/db.json\"",
     "test": "concurrently \" node server\" \" react-scripts test\"",
     "eject": "concurrently \" node server\" \" react-scripts eject\"",
     "server": "node server.js",
