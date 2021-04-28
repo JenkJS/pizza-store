@@ -29,7 +29,7 @@
     "test": "concurrently \" node server\" \" react-scripts test\"",
     "eject": "concurrently \" node server\" \" react-scripts eject\"",
     "server": "node server.js",
-    "json-server": " json-server --watch public/items.json --port=3001"
+    "json-server": "json-server --watch public/db.json --port=3001"
   },
   "eslintConfig": {
     "extends": [
