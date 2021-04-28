@@ -24,10 +24,9 @@
     "web-vitals": "^1.1.1"
   },
   "scripts": {
-    "start": "concurrently \"react-scripts start\"  \"json-server -p 3001 -w public/db.json\"",
-    "build": "concurrently \"react-scripts start\"  \"json-server -p 3001 -w public/db.json\"",
-    "test": "concurrently \" node server\" \" react-scripts test\"",
-    "eject": "concurrently \" node server\" \" react-scripts eject\"",
+    "start": "node scripts/start.js",
+    "build": "node scripts/build.js",
+    "test": "node scripts/test.js",
     "server": "node server.js",
     "json-server": "json-server --watch public/db.json --port=3001"
   },
