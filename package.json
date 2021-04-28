@@ -29,9 +29,9 @@
   },
   "scripts": {
     "start": "concurrently \"react-scripts start\"  \"json-server -p 3001 -w public/db.json\"",
-    "build": "concurrently \"react-scripts build\"  \"json-server -p 3001 -w public/db.json\"",
-    "test": "concurrently \" node server\" \" react-scripts test\"",
-    "eject": "concurrently \" node server\" \" react-scripts eject\"",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
     "server": "node server.js",
     "json-server": "json-server --watch public/db.json --port=3001"
   },
